@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <title>Jogo de dados</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="menu-list">
+            <div class="menu-item" id="jogar">
+                <img src="img/dado_3d.png" />
+                <button id="play">JOGAR</button>
+            </div>
+            <div class="menu-item" id="ranking">
+                <img src="img/ranking.png" />
+                <button>RANKING</button>
+            </div>
+        </div>
+        <div id="register-players">
+            <div class="register-player" id="register-player1">
+                <input type="text" id="input-player1" placeholder="Nome do jogagor 1">
+            </div>
+            <div class="register-player" id="register-player2">
+                <input type="text" id="input-player2" placeholder="Nome do jogador 2">
+            </div>
+            <div>
+                <button id="register-back">VOLTAR</button>
+                <button id="register">REGISTRAR</button>
+            </div>
+        </div>
+        <div id="game-area">
+            <div class="player" id="player1">
+                <h1 id="player1-name" class="player-name">
+                    Jogador 1
+                </h1>
+                <div class="avatar">
+                    <img src="img/player.png" alt="">
+                </div>
+                <div class="score">
+                    <h2>Score:</h2>
+                    <span id="player1-score">10</span>
+                </div>
+                <button class="lancar-dado animate__animated">Lançar Dado</button>
+            </div>
+            <div class="dado-area" id="dado-area-player1">
+                <img src="img/Dado_0.jpg" id="dado1" />
+            </div>
+            <div class="dado-area" id="dado-area-player2">
+                <img src="img/Dado_0.jpg" id="dado2" />
+            </div>
+            <div class="player" id="player2">
+                <h1 id="player2-name" class="player-name">
+                    Jogador 2
+                </h1>
+                <div class="avatar">
+                    <img src="img/player2.png" alt="">
+                </div>
+                <div class="score">
+                    <h2>Score:</h2>
+                    <span id="player2-score">10</span>
+                </div>
+                <button class="lancar-dado">Lançar Dado</button>
+            </div>
+        </div>
+    </div>
+    <audio src="audios/jogo-theme.mp3" autoplay controls></audio>
+    <button id="constrol-effect-click"></button>
+    <button id="control-sound-theme-click"></button>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
