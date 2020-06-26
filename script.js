@@ -65,13 +65,13 @@ let player1ScoreHTML = document.getElementById('player1-score');
 let player2ScoreHTML = document.getElementById('player2-score');
 
 let player1 = {
-    score: 1,
+    score: 10,
     roundScore: 0,
     countClick: 0
 };
 
 let player2 = {
-    score: 1,
+    score: 10,
     roundScore: 0,
     countClick: 0
 };
