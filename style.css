@@ -18,7 +18,7 @@
 }
 
 #menu-list {
-    display: none;
+    display: flex;
     flex-direction: column;
     width: 700px;
     align-items: center;
@@ -103,7 +103,7 @@
 }
 
 #game-area {
-    display: flex;
+    display: none;
     justify-content: space-between;
     width: 100%;
     margin-left: auto;
